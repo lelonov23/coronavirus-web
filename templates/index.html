@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<head>
+     <title>Coronavirus</title>
+</head>
+<header class="site-header">
+        <h1 align="center" >COVID-19</h1>
+        <p style='text-align:center'>Помогаем узнать больше</p>
+        <img src="/static/img/min.png" width="559" height="259" alt="Фото">
+</header>
+      <section class="features">
+        <link rel="stylesheet" href="/static/css/style.css">
+        <h2>Что вы знаете?</h2>
+        <p class="feature-first">Распространен практически по всему миру</p>
+        <p class="feature-third">Очень важно оставаться дома</p>
+        <p class="feature-second">Процент смертности - 3.6%</p>
+      </section>
+
+      <section class="skills">
+        <h2>Что здесь можно найти?</h2>
+        <ul class="skills-list">
+            <li class="skills-item"><a href="/register">возможность регистрации для заболевших;</a></li>
+            <li class="skills-item"><a href="/diagram">статистику по данным нашего сайта;</a></li>
+            <li class="skills-item"><a href="/advice">полезные советы;</a></li>
+            <li class="skills-item"><a href="/pharmacies">карту с ближайшими аптеками;</a></li>
+        </ul>
+      </section>
+<body background="/static/img/3.jpg">
+</body>
+{% endblock %}

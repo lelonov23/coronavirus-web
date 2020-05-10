@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block content %}
+      <header class="site-header">
+        <h1>COVID-19</h1>
+        <p>Помогаем узнать больше</p>
+        <img src="/static/img/min.png" width="559" height="259" alt="Фото">
+      </header>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"  rel="stylesheet"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 font-italic">Чем занять себя на самоизоляции?</h1>
+      <p class="lead my-3">Если вам скучно сидеть дома, мы можем предложить вам интересные подборки</p>
+    </div>
+  </div>
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Фильмы</strong>
+          <h3 class="mb-0">Для всей семьи</h3>
+          <ul>
+            <li><p class="card-text mb-auto">Кролик Питер</p></li>
+            <li><p class="card-text mb-auto">Гарри Поттер</p></li>
+            <li><p class="card-text mb-auto">Первому игроку приготовиться</p></li>
+            <li><p class="card-text mb-auto">Алиса в Стране чудес</p></li>
+            <li><p class="card-text mb-auto">Мост в Терабитию</p></li>
+            <li><p class="card-text mb-auto">Ёлки</p></li>
+          </ul>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="/static/img/film.jpg" class="bd-placeholder-img" width="220" height="280"/>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Книги</strong>
+          <h3 class="mb-0">Захватывающий сюжет</h3>
+           <ul>
+            <li><p class="card-text mb-auto">Десять негритят - Агата Кристи</p></li>
+            <li><p class="card-text mb-auto">Прежде чем я упаду - Лорен Оливер</p></li>
+            <li><p class="card-text mb-auto">The One. Единственный - Джон Маррс</p></li>
+            <li><p class="card-text mb-auto">Оно - Стивен Кинг</p></li>
+          </ul>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+         <img src="/static/img/book.jpg" class="bd-placeholder-img" width="220" height="280"/>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+<body background="/static/img/1.jpg">
+</body>
+{% endblock %}

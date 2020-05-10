@@ -1,0 +1,118 @@
+body {
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+}
+
+h1 {
+  width: 260px;
+  font-family: "Georgia", serif;
+  font-size: 36px;
+  align: center;
+  color: #102c54;
+  line-height: 36px;
+}
+
+h2 {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.site-header {
+  margin-bottom: 30px;
+}
+
+.skills-item {
+  margin-bottom: 15px;
+  padding-left: 20px;
+  border-left: 10px solid #c4c4c4;
+  border-color: #102c54;
+  color: #000000;
+}
+
+.green {
+  margin-bottom: 15px;
+  padding-left: 20px;
+  border-left: 10px solid #c4c4c4;
+  color: #000000;
+  border-color: #00ff00;
+}
+
+.blue {
+  margin-bottom: 15px;
+  padding-left: 20px;
+  border-left: 10px solid #c4c4c4;
+  color: #000000;
+  border-color: #0099cc;
+}
+
+.grey {
+  margin-bottom: 15px;
+  padding-left: 20px;
+  border-left: 10px solid #c4c4c4;
+  color: #000000;
+  border-color: #808080;
+}
+
+.container {
+  width: 480px;
+  margin: 0 auto;
+}
+
+.site-header img {
+  display: block;
+  margin: 0 auto;
+}
+
+.features {
+  margin-bottom: 30px;
+}
+
+.features p {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  margin: 0 5px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.feature-first {
+  padding-top: 60px;
+  color: #102c54;
+  font-family: "Impact";
+  background-image: url("/static/img/иконка1.jpg");
+}
+
+.feature-second {
+  padding-top: 60px;
+  font-family: "Impact";
+  color: #102c54;
+  background-image: url("/static/img/иконка2.jpg");
+}
+
+.feature-third {
+  padding-top: 60px;
+  font-family: "Impact";
+  color: #102c54;
+  background-image: url("/static/img/иконка3.jpg");
+}
+
+.skills-list {
+  padding: 0;
+  list-style: none;
+}
+
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  color: #0b0d0f;
+}
+
+.center-img {
+  display: block;
+  margin: 0 auto;
+}

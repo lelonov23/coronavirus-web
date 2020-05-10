@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+<header class="site-header">
+        <h1>COVID-19</h1>
+        <p style='text-align:center'>Помогаем узнать больше</p>
+        <img src="/static/img/min.png" width="559" height="259" alt="Фото">
+</header>
+<h1>Выбор диаграммы</h1>
+<link rel="stylesheet" href="/static/css/style.css">
+<form action="" method="post">
+    {{ form.hidden_tag() }}
+    {{ form.csrf_token }}
+     <p>
+        {{ form.kind.label }}<br>
+        {{ form.kind(class="form-control") }}<br>
+        {% for error in form.kind.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+     </p>
+ <p>{{ form.submit(type="submit", class="btn btn-primary") }}</p>
+    {{message}}
+</form>
+<body background="/static/img/1.jpg">
+</body>
+{% endblock %}

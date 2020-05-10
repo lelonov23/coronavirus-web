@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+<header class="site-header">
+        <h1 style='text-align:center'>COVID-19</h1>
+        <p style='text-align:center'>Помогаем узнать больше</p>
+        <img class="site-header img" src="/static/img/min.png" width="559" height="259" alt="Фото">
+</header>
+ <meta charset="utf-8">
+ <link rel="stylesheet" href="/static/css/style.css">
+  <h1>Круговая диаграмма</h1>
+  <script src="https://www.google.com/jsapi"></script>
+  <script>
+   google.load("visualization", "1", {packages:["corechart"]});
+   google.setOnLoadCallback(drawChart);
+   function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+     ['Степень заболевания', 'Количество'],
+     ['Отсутствие', {{graph.healthy}}],
+     ['Легкая', {{graph.light}}],
+     ['Средняя', {{graph.middle}}],
+     ['Тяжелая', {{graph.hard}}]
+    ]);
+    var options = {
+     title: 'Степень заболевания зарегистрированных пользователей',
+     is3D: true,
+    };
+    var chart = new google.visualization.PieChart(document.getElementById('air'));
+     chart.draw(data, options);
+   }
+  </script>
+ <body background="/static/img/1.jpg">
+  <div id="air" style="width: 500px; height: 400px;"></div>
+ </body>
+{% endblock %}
