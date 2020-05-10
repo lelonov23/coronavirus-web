@@ -118,7 +118,7 @@ def login():
     form = LoginForm()
     if form.validate_on_submit():
         session = db_session.create_session()
-        admin = session.query(Patient).filter(Patient.name == form.name.data).first()
+        admin = session.query(Patient).filter(Patient.email == form.email.data).first()
         if admin and admin.check_password(form.password.data):
             login_user(admin, remember=form.remember_me.data)
             return redirect("/")
@@ -258,8 +258,9 @@ def apteka():
 
 def main():
     db_session.global_init("db/patients.sqlite")
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host='0.0.0.0', port=port)
+    # port = int(os.environ.get("PORT", 5000))
+    # app.run(host='0.0.0.0', port=port)
+    app.run()
 
 
 class RegisterForm(FlaskForm):
@@ -279,7 +280,7 @@ class RegisterForm(FlaskForm):
 
 
 class LoginForm(FlaskForm):
-    name = StringField('Имя пользователя', validators=[DataRequired()])
+    email = StringField('Почта пользователя', validators=[DataRequired()])
     password = PasswordField('Пароль', validators=[DataRequired()])
     remember_me = BooleanField('Запомнить меня')
     submit = SubmitField('Войти')
